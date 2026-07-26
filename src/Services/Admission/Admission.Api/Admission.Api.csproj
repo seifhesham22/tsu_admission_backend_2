@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <RootNamespace>Admission.Api</RootNamespace>
+    <UserSecretsId>admission-api-2026</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" />
+    <PackageReference Include="Serilog.AspNetCore" />
+    <PackageReference Include="Serilog.Sinks.Console" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Admission.Application\Admission.Application.csproj" />
+    <ProjectReference Include="..\Admission.Infrastructure\Admission.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Shared.Auth\Shared.Auth.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Shared.Infrastructure\Shared.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

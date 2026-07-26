@@ -1,0 +1,35 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/Contracts/Contracts.csproj" />
+    <Project Path="src/BuildingBlocks/Shared.Auth/Shared.Auth.csproj" />
+    <Project Path="src/BuildingBlocks/Shared.Infrastructure/Shared.Infrastructure.csproj" />
+    <Project Path="src/BuildingBlocks/Shared.Kernel/Shared.Kernel.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Admission/">
+    <Project Path="src/Services/Admission/Admission.Api/Admission.Api.csproj" />
+    <Project Path="src/Services/Admission/Admission.Application/Admission.Application.csproj" />
+    <Project Path="src/Services/Admission/Admission.Domain/Admission.Domain.csproj" />
+    <Project Path="src/Services/Admission/Admission.Infrastructure/Admission.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Files/">
+    <Project Path="src/Services/Files/Files.Api/Files.Api.csproj" />
+    <Project Path="src/Services/Files/Files.Application/Files.Application.csproj" />
+    <Project Path="src/Services/Files/Files.Domain/Files.Domain.csproj" />
+    <Project Path="src/Services/Files/Files.Infrastructure/Files.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Identity/">
+    <Project Path="src/Services/Identity/Identity.Api/Identity.Api.csproj" />
+    <Project Path="src/Services/Identity/Identity.Application/Identity.Application.csproj" />
+    <Project Path="src/Services/Identity/Identity.Infrastructure/Identity.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Notifications/">
+    <Project Path="src/Services/Notifications/Notifications.Worker/Notifications.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Admission.Domain.Tests/Admission.Domain.Tests.csproj" />
+    <Project Path="tests/Architecture.Tests/Architecture.Tests.csproj" />
+    <Project Path="tests/Files.Domain.Tests/Files.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
