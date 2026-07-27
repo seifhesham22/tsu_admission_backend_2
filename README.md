@@ -22,11 +22,12 @@ Four services, each owning its own PostgreSQL database and share integration eve
 ## Tech stack
 
 1. **.NET 8, ASP.NET Core**
-2. **PostgreSQL + EF Core 8**
-3. **RabbitMQ + MassTransit**
-4. **S3 (Yandex Object Storage)**
-5. **Docker Compose**
-6. **xUnit + NetArchTest**
+2. **ASP.NET Core Identity**
+3. **PostgreSQL + EF Core 8**
+4. **RabbitMQ + MassTransit**
+5. **S3 (Yandex Object Storage)**
+6. **Docker Compose**
+7. **xUnit + NetArchTest**
 
 ---
 
