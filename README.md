@@ -81,7 +81,7 @@ PATCH  /api/v1/applicants/me/admission/programs/{id}/priority
 GET    /api/v1/admissions?status=&onlyMine=&pageNumber=
 POST   /api/v1/admissions/{id}/manager          take ownership
 DELETE /api/v1/admissions/{id}/manager          release ownership
-PUT    /api/v1/admissions/{id}/manager          assign, head manager only
+PUT    /api/v1/admissions/{id}/manager          assign applicant, head manager only
 PATCH  /api/v1/admissions/{id}/status
 
 GET    /api/v1/catalogue/programs?facultyIds=&pageNumber=
