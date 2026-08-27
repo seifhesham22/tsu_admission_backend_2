@@ -1,10 +1,5 @@
-using Identity.Application.Admin.Contracts;
-using Identity.Application.Admin.Dtos;
-using Identity.Application.Admin;
-using Identity.Infrastructure.Identity.Authentication;
-using Identity.Infrastructure.Identity.Contracts;
-using Identity.Infrastructure.Identity.Models;
-using Identity.Infrastructure.Identity.Services;
+using Identity.Api.Admin;
+using Identity.Api.Admin.Dtos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Shared.Auth;

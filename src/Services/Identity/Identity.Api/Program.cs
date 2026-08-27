@@ -1,6 +1,6 @@
-using Identity.Infrastructure;
-using Identity.Infrastructure.Persistence;
-using Identity.Infrastructure.Seeding;
+using Identity.Api.DiExtentions;
+using Identity.Api.Persistence;
+using Identity.Api.Persistence.Seeding;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Shared.Auth;

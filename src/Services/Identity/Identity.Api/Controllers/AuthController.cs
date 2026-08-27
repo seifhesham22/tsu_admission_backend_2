@@ -1,10 +1,6 @@
-using Identity.Application.Users.Contracts;
-using Identity.Application.Users.Dtos;
-using Identity.Application.Users;
-using Identity.Infrastructure.Identity.Authentication;
-using Identity.Infrastructure.Identity.Contracts;
-using Identity.Infrastructure.Identity.Models;
-using Identity.Infrastructure.Identity.Services;
+using Identity.Api.Users;
+using Identity.Api.Users.Dtos;
+using Identity.Api.Token;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

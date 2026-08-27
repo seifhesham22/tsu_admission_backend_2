@@ -21,15 +21,12 @@
   </Folder>
   <Folder Name="/src/Services/Identity/">
     <Project Path="src/Services/Identity/Identity.Api/Identity.Api.csproj" />
-    <Project Path="src/Services/Identity/Identity.Application/Identity.Application.csproj" />
-    <Project Path="src/Services/Identity/Identity.Infrastructure/Identity.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/src/Services/Notifications/">
     <Project Path="src/Services/Notifications/Notifications.Worker/Notifications.Worker.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/Admission.Domain.Tests/Admission.Domain.Tests.csproj" />
-    <Project Path="tests/Architecture.Tests/Architecture.Tests.csproj" />
     <Project Path="tests/Files.Domain.Tests/Files.Domain.Tests.csproj" />
   </Folder>
 </Solution>
