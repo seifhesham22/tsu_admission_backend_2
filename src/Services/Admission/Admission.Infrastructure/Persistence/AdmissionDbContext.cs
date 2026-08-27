@@ -2,7 +2,6 @@ using Admission.Domain.Admissions;
 using Admission.Domain.Applicants;
 using Admission.Domain.Catalogue;
 using Admission.Domain.Managers;
-using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 namespace Admission.Infrastructure.Persistence;
@@ -36,10 +35,6 @@ public sealed class AdmissionDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AdmissionDbContext).Assembly);
-
-        modelBuilder.AddInboxStateEntity();
-        modelBuilder.AddOutboxMessageEntity();
-        modelBuilder.AddOutboxStateEntity();
 
         base.OnModelCreating(modelBuilder);
     }

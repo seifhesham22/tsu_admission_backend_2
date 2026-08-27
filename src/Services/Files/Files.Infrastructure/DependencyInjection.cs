@@ -76,13 +76,6 @@ public static class DependencyInjection
 
             bus.AddConsumer<AdmissionAccessChangedConsumer>();
 
-            bus.AddEntityFrameworkOutbox<FilesDbContext>(outbox =>
-            {
-                outbox.UsePostgres();
-                outbox.UseBusOutbox();
-                outbox.QueryDelay = TimeSpan.FromSeconds(1);
-            });
-
             bus.UsingRabbitMq((context, cfg) =>
             {
                 cfg.Host(rabbit.Host, rabbit.Port, rabbit.VirtualHost, host =>

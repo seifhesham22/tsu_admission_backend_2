@@ -2,7 +2,6 @@ using Identity.Infrastructure.Identity.Authentication;
 using Identity.Infrastructure.Identity.Contracts;
 using Identity.Infrastructure.Identity.Models;
 using Identity.Infrastructure.Identity.Services;
-using MassTransit;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,9 +23,5 @@ public sealed class AppIdentityDbContext : IdentityDbContext<ApplicationUser, Ap
             entity.Property(x => x.RefreshTokenHash).HasMaxLength(128);
             entity.HasIndex(x => x.RefreshTokenHash);
         });
-
-        builder.AddInboxStateEntity();
-        builder.AddOutboxMessageEntity();
-        builder.AddOutboxStateEntity();
     }
 }

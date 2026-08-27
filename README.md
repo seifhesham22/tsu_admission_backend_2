@@ -36,11 +36,8 @@ Four services, each owning its own PostgreSQL database and share integration eve
 **Database per service**
 Each service owns its schema and no other service may read it. This is what makes them independently deployable rather than a distributed monolith.
 
-**Transactional outbox**
-A database write and a published event are two systems, so a crash between them loses the event. The outbox writes both in one transaction and dispatches afterwards.
-
 **Idempotent consumers**
-RabbitMQ delivers at least once, so every consumer must tolerate seeing the same message twice. Existence checks and `OccurredAtUtc` comparisons make redelivery harmless.
+RabbitMQ delivers at least once, so every consumer must tolerate seeing the same message twice. Existence checks in the consumers and an `OccurredAtUtc` comparison on `AdmissionAccess` make redelivery harmless.
 
 **Rich domain model (DDD)**
 Business rules live on the entities that own them, behind private setters. `ApplicantAdmission` holds one definition of "closed" and one of "owned by" instead of copies scattered across services.
