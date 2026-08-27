@@ -1,5 +1,4 @@
 using Files.Domain;
-using MassTransit;
 using Microsoft.EntityFrameworkCore;
 
 namespace Files.Infrastructure.Persistence;
@@ -53,10 +52,6 @@ public sealed class FilesDbContext : DbContext
             entity.HasIndex(x => x.ApplicantAuthId);
             entity.HasIndex(x => x.AssignedManagerAuthId);
         });
-
-        modelBuilder.AddInboxStateEntity();
-        modelBuilder.AddOutboxMessageEntity();
-        modelBuilder.AddOutboxStateEntity();
 
         base.OnModelCreating(modelBuilder);
     }
