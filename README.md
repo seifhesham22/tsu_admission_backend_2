@@ -27,7 +27,7 @@ Four services, each owning its own PostgreSQL database and share integration eve
 4. **RabbitMQ + MassTransit**
 5. **S3 (Yandex Object Storage)**
 6. **Docker Compose**
-7. **xUnit + NetArchTest**
+7. **xUnit**
 
 ---
 
